@@ -12,8 +12,8 @@ if(isset($_POST['submit']) && !empty($_POST['submit'])):
             $email = !empty($_POST['email'])?$_POST['email']:'';
             $message = !empty($_POST['message'])?$_POST['message']:'';
             
-            $to = 'bleasing@bk.ru';
-            $subject = 'Письмо подтвержение с сайта bleasing.ru';
+            $to = 'mmzhirkov@yandex.ru';
+            $subject = 'ГЏГЁГ±ГјГ¬Г® ГЇГ®Г¤ГІГўГҐГ°Г¦ГҐГ­ГЁГҐ Г± Г±Г Г©ГІГ  bleasing.ru';
             $htmlContent = "
                 <h1>Contact information</h1>
                 <p><b>Name: </b>".$name."</p>
@@ -31,16 +31,16 @@ if(isset($_POST['submit']) && !empty($_POST['submit'])):
             
             {
 	header('Refresh: 3; URL=http://bleasing.ru');
-	echo 'Письмо отправлено, в ближайшее время мы свяжемся с Вами!';}
+	echo 'ГЏГЁГ±ГјГ¬Г® Г®ГІГЇГ°Г ГўГ«ГҐГ­Г®, Гў ГЎГ«ГЁГ¦Г Г©ГёГҐГҐ ГўГ°ГҐГ¬Гї Г¬Г» Г±ГўГїГ¦ГҐГ¬Г±Гї Г± Г‚Г Г¬ГЁ!';}
         else:
             {
 	header('Refresh: 3; URL=http://bleasing.ru');
-	echo 'Письмо не отправлено, проверьте свои данные';}
+	echo 'ГЏГЁГ±ГјГ¬Г® Г­ГҐ Г®ГІГЇГ°Г ГўГ«ГҐГ­Г®, ГЇГ°Г®ГўГҐГ°ГјГІГҐ Г±ГўГ®ГЁ Г¤Г Г­Г­Г»ГҐ';}
         endif;
     else:
         {
 	header('Refresh: 3; URL=http://bleasing.ru');
-	echo 'Письмо не отправлено, пройдите проверку на спам!';}
+	echo 'ГЏГЁГ±ГјГ¬Г® Г­ГҐ Г®ГІГЇГ°Г ГўГ«ГҐГ­Г®, ГЇГ°Г®Г©Г¤ГЁГІГҐ ГЇГ°Г®ГўГҐГ°ГЄГі Г­Г  Г±ГЇГ Г¬!';}
     endif;
 else:
     $errMsg = '';
