@@ -235,26 +235,11 @@
 					<!-- /.contact form -->
 					<div class="righ">
 						<div class="col-sm-6 contact-right">
-							<form method="POST" id="contact-form" class="form-horizontal" action="contactengine.php">
-								<div class="form-group">
-								<input type="text" name="name" id="name" class="form-control wow fadeInUp" placeholder="Представьтесь, пожалуйста" required/>
-								</div>
-								<div class="form-group">
-								<input type="text" name="email" id="email" class="form-control wow fadeInUp" placeholder="Ваш Email" required/>
-								</div>					
-								<div class="form-group">
-								<textarea name="message" rows="20" cols="20" id="message" class="form-control input-message wow fadeInUp"  placeholder="Сообщение" required></textarea>
-								</div>
-								<div class="form-group">
-								<div class="g-recaptcha" data-sitekey="6Lf61RoUAAAAAMink47Fud5mLxy2PCzHLFNwoSBR" ></div>
-								</div>
-								<div class="form-group">
-								<div class="actions">
-								
-								<input type="submit" name="submit" value="ОТПРАВИТЬ" class="btn btn-success wow fadeInUp" />
-								</div>
-								</div>
-							</form>		
+							<form action="http://formspree.io/MMZHIRKOV@YANDEX.RU" method="post">
+  <input type="email" name="_replyto">
+  <textarea name="body"></textarea>
+  <input type="submit" value="Send">
+</form>
 					</div>
 					</div>
 				</div>
