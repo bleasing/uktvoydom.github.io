@@ -30,16 +30,16 @@ if(isset($_POST['submit']) && !empty($_POST['submit'])):
             
             
             {
-	header('Refresh: 3; URL=http://bleasing.ru');
+	header('Refresh: 3; URL=http://bleasing.github.io');
 	echo 'Ïèñüìî îòïðàâëåíî, â áëèæàéøåå âðåìÿ ìû ñâÿæåìñÿ ñ Âàìè!';}
         else:
             {
-	header('Refresh: 3; URL=http://bleasing.ru');
+	header('Refresh: 3; URL=http://bleasing.github.io');
 	echo 'Ïèñüìî íå îòïðàâëåíî, ïðîâåðüòå ñâîè äàííûå';}
         endif;
     else:
         {
-	header('Refresh: 3; URL=http://bleasing.ru');
+	header('Refresh: 3; URL=http://bleasing.github.io');
 	echo 'Ïèñüìî íå îòïðàâëåíî, ïðîéäèòå ïðîâåðêó íà ñïàì!';}
     endif;
 else:
