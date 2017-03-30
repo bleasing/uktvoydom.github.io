@@ -2,7 +2,7 @@
 if(isset($_POST['submit']) && !empty($_POST['submit'])):
     if(isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response'])):
         //your site secret key
-        $secret = '6LdVqiMTAAAAAFyZ5fsbYLuKtfZuaY3fONuQ3SY8';
+        $secret = '6Lf61RoUAAAAAGTaaeuitkCvNfDGgbTDbeufdkp-';
         //get verify response data
         $verifyResponse = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret='.$secret.'&response='.$_POST['g-recaptcha-response']);
         $responseData = json_decode($verifyResponse);
@@ -13,7 +13,7 @@ if(isset($_POST['submit']) && !empty($_POST['submit'])):
             $message = !empty($_POST['message'])?$_POST['message']:'';
             
             $to = 'mmzhirkov@yandex.ru';
-            $subject = 'Ïèñüìî ïîäòâåðæåíèå ñ ñàéòà bleasing.ru';
+            $subject = 'Форма обратной связи bleasing.ru';
             $htmlContent = "
                 <h1>Contact information</h1>
                 <p><b>Name: </b>".$name."</p>
